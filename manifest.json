@@ -8,12 +8,12 @@
   "description": "Aplicación para aprender inglés, español y francés",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "https://img.freepik.com/vector-premium/icono-vectorial-color-idioma-sobre-fondo-blanco_268104-25187.jpg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "https://img.freepik.com/vector-premium/icono-vectorial-color-idioma-sobre-fondo-blanco_268104-25187.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
