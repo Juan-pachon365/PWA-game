@@ -1,1 +1,1 @@
-# PWA-game
+# PWA-WordFast
