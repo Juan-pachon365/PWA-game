@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escapa del Humo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🚭 Escapa del Humo</h1>
+    
+    <div id="intro" class="screen">
+      <p class="description">
+        Bienvenido a <strong>Escapa del Humo</strong>, una experiencia interactiva donde lucharás contra la adicción al cigarro a través de desafíos únicos.
+      </p>
+      <input type="text" id="usernameInput" placeholder="Tu nombre..." />
+      <button onclick="saveUsername()">Comenzar</button>
+    </div>
+
+    <div id="menu" class="screen hidden">
+      <h2>Hola <span id="playerName"></span> 👋</h2>
+      <p>Elige un modo de juego:</p>
+      <ul class="game-modes">
+        <li><a href="flappy.html">🫁 Flappy Lungs</a></li>
+        <li><a href="dash.html">💨 Nicotine Dash</a></li>
+        <li><a href="chaos.html">🚬 Escape del Vicio</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
