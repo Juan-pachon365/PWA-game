@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFC15E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+  position: relative;
+}
+
+canvas {
+  background-color: #F7B05B;
+  border: 4px solid #1F1300;
+  border-radius: 10px;
+}
+
+#gameOverScreen {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(31, 19, 0, 0.9);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#gameOverScreen a {
+  background-color: #F7934C;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  canvas {
+    width: 90vw;
+    height: 90vh;
+  }
+}
