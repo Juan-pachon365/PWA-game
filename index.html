@@ -2,33 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Escapa del Humo</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordFast</title>
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🚭 Escapa del Humo</h1>
-    
-    <div id="intro" class="screen">
-      <p class="description">
-        Bienvenido a <strong>Escapa del Humo</strong>, una experiencia interactiva donde lucharás contra la adicción al cigarro a través de desafíos únicos.
-      </p>
-      <input type="text" id="usernameInput" placeholder="Tu nombre..." />
-      <button onclick="saveUsername()">Comenzar</button>
+  <header>
+    <h1>WordFast</h1>
+    <p>Aprende inglés, español y francés con palabras al azar</p>
+  </header>
+  <main>
+    <div class="card">
+      <p><strong>Español:</strong> <span id="spanish-word">-</span></p>
+      <p><strong>Inglés:</strong> <span id="english-word">-</span></p>
+      <p><strong>Francés:</strong> <span id="french-word">-</span></p>
+      <p id="description">Toca el botón para empezar</p>
     </div>
+    <button id="new-word">Nueva palabra</button>
+  </main>
 
-    <div id="menu" class="screen hidden">
-      <h2>Hola <span id="playerName"></span> 👋</h2>
-      <p>Elige un modo de juego:</p>
-      <ul class="game-modes">
-        <li><a href="flappy.html">🫁 Flappy Lungs</a></li>
-        <li><a href="dash.html">💨 Nicotine Dash</a></li>
-        <li><a href="chaos.html">🚬 Escape del Vicio</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(console.error);
+    }
+  </script>
 </body>
 </html>
