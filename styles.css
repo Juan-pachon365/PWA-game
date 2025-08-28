@@ -1,0 +1,87 @@
+:root {
+  --yinmn-blue: #3D5A80;
+  --powder-blue: #98C1D9;
+  --light-cyan: #E0FBFC;
+  --burnt-sienna: #EE6C4D;
+  --gunmetal: #293241;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--gunmetal);
+}
+
+body {
+  background: var(--light-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+  color: var(--yinmn-blue);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.card {
+  background: var(--powder-blue);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 90vw;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+}
+
+button {
+  background: var(--burnt-sienna);
+  color: var(--light-cyan);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(238,108,77,0.6);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--yinmn-blue);
+  box-shadow: 0 4px 8px rgba(61,90,128,0.8);
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    max-width: 500px;
+  }
+
+  button {
+    font-size: 1.3rem;
+  }
+}
